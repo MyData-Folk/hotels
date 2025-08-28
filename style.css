@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body { 
+    font-family: 'Poppins', sans-serif; 
+}
+
+.gradient-bg { 
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+}
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0;
+}
+
+.tab-active {
+  color: #4f46e5; /* indigo-600 */
+  border-color: #d1d5db; /* gray-300 */
+  border-bottom-color: white;
+  background-color: white;
+  z-index: 10;
+}
+
+.table-container { max-height: 60vh; overflow: auto; }
+.sticky-header { position: sticky; top: 0; z-index: 10; }
+.sticky-col { position: sticky; left: 0; z-index: 5; }
+
+.draggable-item { cursor: move; cursor: grab; background-color: white; padding: 0.5rem; border: 1px solid #e5e7eb; border-radius: 0.375rem; box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); }
+.draggable-item:active { cursor: grabbing; }
+.sortable-ghost { opacity: 0.4; background: #c7d2fe; }
+.sortable-list {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f9fafb; /* gray-50 */
+    min-height: 100px;
+    border: 1px solid #e5e7eb; /* gray-200 */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* --- Styles pour les Modales --- */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(17, 24, 39, 0.75); /* gray-900 with opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 50;
+}
+
+.modal-container {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e5e7eb; /* gray-200 */
+}
+
+.modal-close-btn {
+    color: #6b7280; /* gray-500 */
+    font-size: 2.25rem;
+    line-height: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.modal-close-btn:hover { color: #111827; /* gray-900 */ }
+
+.modal-body {
+    padding: 1.5rem;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.modal-footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #e5e7eb; /* gray-200 */
+    background-color: #f9fafb; /* gray-50 */
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+}
+
+/* Styles pour les boutons */
+.btn-primary {
+    padding: 0.5rem 1rem;
+    background-color: #4f46e5; /* indigo-600 */
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.btn-primary:hover { background-color: #4338ca; /* indigo-700 */ }
+
+.btn-secondary {
+    padding: 0.5rem 1rem;
+    background-color: #e5e7eb; /* gray-200 */
+    color: #1f2937; /* gray-800 */
+    border-radius: 0.5rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+.btn-secondary:hover { background-color: #d1d5db; /* gray-300 */ }
+
+/* Styles spécifiques au module Paramètres */
+.settings-tabs {
+    display: flex;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0 1.5rem;
+    margin-top: -1px;
+}
+.tab-btn {
+    padding: 0.75rem 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #6b7280;
+    border-bottom: 3px solid transparent;
+}
+.tab-btn.active {
+    color: #4f46e5;
+    border-bottom-color: #4f46e5;
+}
+.tab-content.hidden {
+    display: none;
+}
+.partner-list-container {
+    max-height: 50vh;
+    overflow-y: auto;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.partner-item {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #f9fafb;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+}
+
+.partner-details h4 { font-weight: 600; color: #111827; }
+.partner-details p { font-size: 0.875rem; color: #4b5563; }
+.partner-details .codes {
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: #1d4ed8;
+    max-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.partner-actions { display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; }
+
+.modal-input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.modal-input:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 2px #c7d2fe;
+}

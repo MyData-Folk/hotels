@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes"> 
+  <title>Tableau de Bord Hôtelier</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-100">
+
+  <header class="gradient-bg text-white shadow-lg">
+    <div class="container mx-auto px-4 py-8 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold">Tableau de Bord Hôtelier</h1>
+      <p class="mt-2 text-lg text-blue-100">Simulez une réservation ou vérifiez vos disponibilités</p>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-8 max-w-7xl">
+    <!-- Panneau de contrôle -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
+      <div class="p-6 md:p-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+          <i class="fas fa-database mr-3 text-blue-500"></i>Panneau de Contrôle
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8 items-center">
+          <div class="md:col-span-2">
+            <label for="fileInput" class="block text-sm font-medium text-gray-700 mb-2">Charger un planning Excel</label>
+            <label class="flex items-center justify-center w-full px-4 py-3 bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer hover:bg-gray-100 transition-colors">
+              <i class="fas fa-upload mr-2 text-gray-500"></i>
+              <span id="fileName" class="text-gray-700">Sélectionner un fichier</span>
+              <input type="file" id="fileInput" accept=".xlsx" class="sr-only">
+            </label>
+          </div>
+          <div class="flex flex-col gap-2">
+             <button type="button" id="resetBtn" class="px-4 py-2 bg-gray-600 text-white rounded-lg shadow hover:bg-gray-700 transition-all w-full">
+              <i class="fas fa-sync-alt mr-2"></i>Réinitialiser
+            </button>
+             <button type="button" id="openSettingsBtn" class="px-4 py-2 bg-slate-800 text-white rounded-lg shadow hover:bg-slate-900 transition-all w-full">
+              <i class="fas fa-cog mr-2"></i>Paramètres
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Outils avec système d'onglets -->
+    <div id="main-tools" class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <!-- Contenu injecté par JS -->
+    </div>
+
+    <!-- Section commune des résultats -->
+    <div id="result" class="mt-8 bg-white rounded-xl shadow-lg overflow-hidden hidden">
+        <!-- Contenu injecté par JS -->
+    </div>
+  </main>
+  
+  <!-- Modale des Paramètres (unifiée) -->
+  <div id="settingsModal" class="modal-overlay hidden">
+      <div class="modal-container max-w-6xl">
+          <div class="modal-header">
+              <h2 class="text-xl font-bold text-gray-800">Paramètres de l'Application</h2>
+              <button class="modal-close-btn" data-modal-id="settingsModal">&times;</button>
+          </div>
+          
+          <!-- Onglets de la modale -->
+          <div class="settings-tabs">
+              <button class="tab-btn active" data-tab="partners">
+                  <i class="fas fa-handshake mr-2"></i>Partenaires OTA
+              </button>
+              <button class="tab-btn" data-tab="displayOrder">
+                  <i class="fas fa-sort-alpha-down mr-2"></i>Ordre d'Affichage
+              </button>
+          </div>
+
+          <div class="modal-body">
+              <!-- Contenu de l'onglet Partenaires -->
+              <div id="tab-content-partners" class="tab-content active">
+                  <div class="grid lg:grid-cols-3 gap-8">
+                      <div class="lg:col-span-2">
+                          <h3 class="font-semibold text-gray-700 mb-2">Partenaires configurés</h3>
+                          <div id="partnerListContainer" class="partner-list-container"></div>
+                      </div>
+                      <div class="bg-gray-50 p-4 rounded-lg">
+                          <h3 id="partnerFormTitle" class="font-semibold text-gray-700 mb-3">Ajouter un partenaire</h3>
+                          <form id="partnerForm" class="space-y-4"></form>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Contenu de l'onglet Ordre d'affichage -->
+              <div id="tab-content-displayOrder" class="tab-content hidden">
+                  <div class="grid md:grid-cols-2 gap-6">
+                      <div>
+                          <h3 class="font-semibold text-gray-700 mb-2">Ordre des types de chambres</h3>
+                          <div id="roomOrderList" class="sortable-list"></div>
+                      </div>
+                      <div>
+                          <h3 class="font-semibold text-gray-700 mb-2">Ordre des plans tarifaires</h3>
+                          <div id="planOrderList" class="sortable-list"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Footer de la modale -->
+          <div class="modal-footer flex-col items-stretch gap-4">
+              <div class="bg-gray-100 p-4 rounded-lg">
+                <h3 class="font-semibold text-gray-700 mb-2">Configuration par défaut (optionnel)</h3>
+                <div class="flex items-center gap-2">
+                  <label for="defaultConfigUrl" class="text-sm font-medium text-gray-600">URL du fichier .json :</label>
+                  <input type="url" id="defaultConfigUrl" class="modal-input flex-grow" placeholder="https://..../config.json">
+                  <button id="clearDefaultConfigUrl" class="btn-secondary !bg-red-100 !text-red-700 hover:!bg-red-200" title="Effacer l'URL par défaut"><i class="fas fa-times"></i></button>
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                  <div>
+                    <input type="file" id="importSettingsInput" class="hidden" accept=".json">
+                    <button id="importSettingsBtn" class="btn-secondary"><i class="fas fa-folder-open mr-2"></i>Importer</button>
+                    <button id="exportSettingsBtn" class="btn-secondary"><i class="fas fa-download mr-2"></i>Exporter</button>
+                  </div>
+                  <div>
+                    <button class="btn-secondary" data-modal-id="settingsModal">Fermer</button>
+                    <button id="saveSettingsBtn" class="btn-primary">Sauvegarder et Appliquer</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</body>
+</html>
