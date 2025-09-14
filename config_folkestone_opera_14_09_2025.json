@@ -1,0 +1,488 @@
+{
+  "partners": {
+    "Agoda (6144)": {
+      "commission": 14.5,
+      "codes": [
+        "OTA-RO-FLEX",
+        "OTA-RO-NANR",
+        "OTA-BB-FLEX-1P",
+        "OTA-BB-NANR-1P",
+        "OTA-BB-FLEX-2P",
+        "OTA-BB-FLEX-4P",
+        "OTA-BB-NANR-4P",
+        "OTA-BB-NANR-2P"
+      ]
+    },
+    "Airbnb (11602)": {
+      "commission": 15,
+      "codes": [
+        "OTA-RO-FLEX"
+      ]
+    },
+    "Booking.com (6562)": {
+      "commission": null,
+      "codes": [
+        "OTA-RO-FLEX",
+        "OTA-RO-NANR",
+        "OTA-BB-FLEX-1P",
+        "OTA-BB-NANR-1P",
+        "OTA-BB-FLEX-2P",
+        "OTA-BB-FLEX-4P",
+        "OTA-BB-NANR-4P",
+        "OTA-BB-NANR-2P",
+        "MOBILE-RO-FLEX",
+        "MOBILE-RO-NANR",
+        "MOBILE-BB-FLEX-2P",
+        "MOBILE-BB-NANR-2P"
+      ]
+    },
+    "Cendyn (ex-Meta i/o) (12562)": {
+      "commission": null,
+      "codes": [
+        "VIP-RO-NANR",
+        "VIP-RATE-FLEX",
+        "VIP-BB-NANR-1P",
+        "VIP-BB-FLEX-1P",
+        "VIP-BB-NANR-2P",
+        "VIP-BB-FLEX-2P",
+        "VIP-BB-NANR-4P",
+        "VIP-BB-FLEX-4P"
+      ]
+    },
+    "D-EDGE Backoffice Connection (10245)": {
+      "commission": null,
+      "codes": [
+        "OTA-RO-FLEX",
+        "OTA-RO-NANR",
+        "OTA-BB-FLEX-1P",
+        "OTA-BB-NANR-1P",
+        "OTA-BB-FLEX-2P",
+        "OTA-BB-FLEX-4P",
+        "OTA-BB-NANR-4P",
+        "OTA-BB-NANR-2P",
+        "FB-CORPO-RO-FLEX",
+        "FB-CORPO-BB-FLEX-1P",
+        "FB-CORPO-BB-FLEX-2P",
+        "FB-CORPO-BB-FLEX-4P",
+        "AMEX-GBT",
+        "CWT-BB-FLEX"
+      ]
+    },
+    "DOTW Webbeds Group (5119)": {
+      "commission": null,
+      "codes": [
+        "TO-BB-FLEX-NET-2P",
+        "TO-BB-NANR-NET-2P",
+        "TO-RO-FLEX-NET",
+        "TO-RO-NANR-NET",
+        "TO-BB-FLEX-NET-1P",
+        "TO-BB-NANR-NET-1P",
+        "TO-BB-FLEX-NET-4P",
+        "PROMO-TO-RO-NANR",
+        "PROMO-TO-BB-2P-NANR",
+        "PROMO-TO-BB-1P-NANR",
+        "PROMO-TO-BB-4P-NANR"
+      ]
+    },
+    "Expedia (1903)": {
+      "commission": 18,
+      "codes": [
+        "OTA-RO-FLEX",
+        "OTA-RO-NANR",
+        "OTA-BB-FLEX-1P",
+        "OTA-BB-NANR-1P",
+        "OTA-BB-FLEX-2P",
+        "OTA-BB-FLEX-4P",
+        "OTA-BB-NANR-4P",
+        "OTA-BB-NANR-2P",
+        "FB-CORPO-BB-FLEX-1P",
+        "FB-CORPO-BB-FLEX-2P",
+        "PKG-EXP-RO-FLEX",
+        "PKG-EXP-RO-NANR",
+        "PKG-EXP-BB-FLEX-1P",
+        "PKG-EXP-BB-NANR-1P",
+        "PKG-EXP-BB-FLEX-2P",
+        "PKG-EXP-BB-NANR-2P",
+        "PKG-EXP-BB-FLEX-4P",
+        "PKG-EXP-BB-NANR-4P",
+        "MOBILE-RO-FLEX",
+        "MOBILE-RO-NANR",
+        "MOBILE-BB-FLEX-2P",
+        "MOBILE-BB-NANR-2P"
+      ]
+    },
+    "France Hotel Guide (3990)": {
+      "commission": null,
+      "codes": [
+        "OTA-RO-FLEX",
+        "OTA-RO-NANR"
+      ]
+    },
+    "Getaroom.com (10718)": {
+      "commission": null,
+      "codes": [
+        "OTA-RO-FLEX",
+        "OTA-RO-NANR",
+        "OTA-BB-FLEX-1P",
+        "OTA-BB-NANR-1P",
+        "OTA-BB-FLEX-2P",
+        "OTA-BB-FLEX-4P",
+        "OTA-BB-NANR-4P",
+        "OTA-BB-NANR-2P"
+      ]
+    },
+    "H.I.S. International Tours France SASU (7443)": {
+      "commission": null,
+      "codes": [
+        "TO-BB-FLEX-NET-2P",
+        "TO-BB-NANR-NET-2P",
+        "TO-RO-FLEX-NET",
+        "TO-RO-NANR-NET",
+        "PROMO-TO-RO-FLEX",
+        "PROMO-TO-RO-NANR",
+        "PROMO-TO-BB-2P-FLEX",
+        "PROMO-TO-BB-2P-NANR"
+      ]
+    },
+    "Hotel Trader (17976)": {
+      "commission": null,
+      "codes": [
+        "TO-BB-FLEX-NET-2P",
+        "TO-BB-NANR-NET-2P",
+        "TO-RO-FLEX-NET",
+        "TO-RO-NANR-NET",
+        "TO-BB-FLEX-NET-1P",
+        "TO-BB-NANR-NET-1P",
+        "TO-BB-FLEX-NET-4P",
+        "TO-BB-NANR-NET-4P",
+        "PROMO-TO-RO-FLEX",
+        "PROMO-TO-RO-NANR",
+        "PROMO-TO-BB-2P-FLEX",
+        "PROMO-TO-BB-2P-NANR",
+        "PROMO-TO-BB-1-FLEX",
+        "PROMO-TO-BB-1P-NANR",
+        "PROMO-TO-BB-4P-FLEX",
+        "PROMO-TO-BB-4P-NANR"
+      ]
+    },
+    "Hotelbeds (4881)": {
+      "commission": 20,
+      "codes": [
+        "TO-BB-FLEX-BRUT-2P",
+        "TO-BB-NANR-BRUT-2P",
+        "HB-RO-FLEX-BRUT",
+        "TO-RO-NANR-BRUT",
+        "TO-BB-FLEX-BRUT-1P",
+        "TO-BB-NANR-BRUT-1P",
+        "TO-BB-FLEX-BRUT-4P",
+        "TO-BB-NANR-BRUT-4P",
+        "PROMO-HB-RO-FLEX",
+        "PROMO-HB-RO-NANR",
+        "PROMO-HB-BB-FLEX-1P",
+        "PROMO-HB-BB-NANR-1P",
+        "PROMO-HB-BB-FLEX-2P",
+        "PROMO-HB-BB-NANR-2P",
+        "PROMO-HB-BB-FLEX-4P",
+        "PROMO-HB-BB-NANR-4P"
+      ]
+    },
+    "HRS (6545)": {
+      "commission": null,
+      "codes": [
+        "OTA-RO-FLEX",
+        "OTA-RO-NANR",
+        "OTA-BB-FLEX-1P",
+        "OTA-BB-NANR-1P",
+        "OTA-BB-FLEX-2P",
+        "OTA-BB-NANR-2P"
+      ]
+    },
+    "InfiniteHotel (8929)": {
+      "commission": null,
+      "codes": [
+        "TO-BB-FLEX-NET-2P",
+        "TO-BB-NANR-NET-2P",
+        "TO-RO-FLEX-NET",
+        "TO-RO-NANR-NET",
+        "TO-BB-FLEX-NET-1P",
+        "TO-BB-NANR-NET-1P",
+        "TO-BB-FLEX-NET-4P",
+        "TO-BB-NANR-NET-4P"
+      ]
+    },
+    "lastminute.com (7768)": {
+      "commission": null,
+      "codes": [
+        "OTA-RO-FLEX",
+        "OTA-BB-FLEX-1P",
+        "OTA-BB-NANR-1P",
+        "OTA-BB-FLEX-2P",
+        "OTA-BB-FLEX-4P",
+        "OTA-BB-NANR-4P",
+        "OTA-BB-NANR-2P",
+        "OTA-RO-NANR"
+      ]
+    },
+    "Magic Holidays (17313)": {
+      "commission": null,
+      "codes": [
+        "TO-BB-FLEX-NET-2P",
+        "TO-BB-NANR-NET-2P",
+        "TO-RO-FLEX-NET",
+        "TO-RO-NANR-NET",
+        "TO-BB-FLEX-NET-1P",
+        "TO-BB-NANR-NET-1P",
+        "TO-BB-FLEX-NET-4P",
+        "TO-BB-NANR-NET-4P",
+        "PROMO-TO-RO-FLEX",
+        "PROMO-TO-RO-NANR",
+        "PROMO-TO-BB-2P-FLEX",
+        "PROMO-TO-BB-2P-NANR",
+        "PROMO-TO-BB-1-FLEX",
+        "PROMO-TO-BB-1P-NANR",
+        "PROMO-TO-BB-4P-FLEX",
+        "PROMO-TO-BB-4P-NANR"
+      ]
+    },
+    "Miki Travel Ltd (5120)": {
+      "commission": null,
+      "codes": [
+        "TO-BB-FLEX-NET-2P",
+        "TO-BB-NANR-NET-2P",
+        "TO-RO-FLEX-NET",
+        "TO-RO-NANR-NET",
+        "TO-BB-FLEX-NET-1P",
+        "TO-BB-NANR-NET-1P",
+        "TO-BB-FLEX-NET-4P",
+        "TO-BB-NANR-NET-4P"
+      ]
+    },
+    "Olympia Europe (10246)": {
+      "commission": null,
+      "codes": [
+        "TO-BB-FLEX-NET-2P",
+        "TO-BB-NANR-NET-2P",
+        "TO-RO-FLEX-NET",
+        "TO-RO-NANR-NET",
+        "TO-BB-FLEX-NET-1P",
+        "TO-BB-NANR-NET-1P",
+        "TO-BB-FLEX-NET-4P",
+        "TO-BB-NANR-NET-4P",
+        "PROMO-TO-RO-FLEX",
+        "PROMO-TO-RO-NANR",
+        "PROMO-TO-BB-2P-FLEX",
+        "PROMO-TO-BB-2P-NANR",
+        "PROMO-TO-BB-1-FLEX",
+        "PROMO-TO-BB-1P-NANR",
+        "PROMO-TO-BB-4P-FLEX",
+        "PROMO-TO-BB-4P-NANR"
+      ]
+    },
+    "SAS WIHP (5830)": {
+      "commission": null,
+      "codes": [
+        "VIP-RO-NANR",
+        "VIP-RATE-FLEX",
+        "VIP-BB-NANR-1P",
+        "VIP-BB-FLEX-1P",
+        "VIP-BB-NANR-2P",
+        "VIP-BB-FLEX-2P",
+        "VIP-BB-NANR-4P",
+        "VIP-BB-FLEX-4P"
+      ]
+    },
+    "Serhs Tourism (Welcomebeds) (8546)": {
+      "commission": null,
+      "codes": [
+        "TO-BB-FLEX-NET-2P",
+        "TO-BB-NANR-NET-2P",
+        "TO-RO-FLEX-NET",
+        "TO-RO-NANR-NET",
+        "TO-BB-NANR-NET-1P",
+        "TO-BB-FLEX-NET-1P",
+        "TO-BB-NANR-NET-4P",
+        "TO-BB-FLEX-NET-4P",
+        "PROMO-TO-RO-FLEX",
+        "PROMO-TO-RO-NANR",
+        "PROMO-TO-BB-2P-FLEX",
+        "PROMO-TO-BB-2P-NANR",
+        "PROMO-TO-BB-1-FLEX",
+        "PROMO-to-BB-1P-NANR",
+        "PROMO-TO-BB-4P-FLEX",
+        "PROMO-TO-BB-4P-NANR"
+      ]
+    },
+    "SunHotels Webbeds Group (9318)": {
+      "commission": null,
+      "codes": [
+        "TO-BB-FLEX-NET-2P",
+        "TO-BB-NANR-NET-2P",
+        "TO-RO-FLEX-NET",
+        "TO-RO-NANR-NET",
+        "TO-BB-FLEX-NET-1P",
+        "TO-BB-NANR-NET-1P",
+        "TO-BB-FLEX-NET-4P",
+        "TO-BB-NANR-NET-4P",
+        "PROMO-TO-RO-FLEX",
+        "PROMO-TO-RO-NANR",
+        "PROMO-TO-BB-2P-FLEX",
+        "PROMO-TO-BB-2P-NANR",
+        "PROMO-TO-BB-1-FLEX",
+        "PROMO-TO-BB-1P-NANR",
+        "PROMO-TO-BB-4P-FLEX",
+        "PROMO-TO-BB-4P-NANR"
+      ]
+    },
+    "TBO.com (14740)": {
+      "commission": null,
+      "codes": [
+        "TO-BB-FLEX-NET-2P",
+        "TO-BB-NANR-NET-2P",
+        "TO-RO-FLEX-NET",
+        "TO-RO-NANR-NET",
+        "TO-BB-FLEX-NET-1P",
+        "TO-BB-NANR-NET-1P",
+        "TO-BB-FLEX-NET-4P",
+        "TO-BB-NANR-NET-4P",
+        "PROMO-TO-RO-FLEX",
+        "PROMO-TO-RO-NANR",
+        "PROMO-TO-BB-2P-FLEX",
+        "PROMO-TO-BB-2P-NANR",
+        "PROMO-TO-BB-1-FLEX",
+        "PROMO-TO-BB-1P-NANR",
+        "PROMO-TO-BB-4P-FLEX",
+        "PROMO-TO-BB-4P-NANR"
+      ]
+    },
+    "Travco (13559)": {
+      "commission": null,
+      "codes": [
+        "TRAVCO-BB-FLEX-NET",
+        "TRAVCO-BB-NANR-NET"
+      ]
+    },
+    "Trip.com (11222)": {
+      "commission": null,
+      "codes": [
+        "OTA-RO-FLEX",
+        "OTA-RO-NANR",
+        "OTA-BB-FLEX-1P",
+        "OTA-BB-NANR-1P",
+        "OTA-BB-FLEX-2P",
+        "OTA-BB-FLEX-4P",
+        "OTA-BB-NANR-4P",
+        "OTA-BB-NANR-2P",
+        "PKG-EXP-RO-FLEX",
+        "PKG-EXP-RO-NANR",
+        "PKG-EXP-BB-FLEX-1P",
+        "PKG-EXP-BB-NANR-1P",
+        "PKG-EXP-BB-FLEX-2P",
+        "PKG-EXP-BB-NANR-2P",
+        "PKG-EXP-BB-FLEX-4P",
+        "PKG-EXP-BB-NANR-4P"
+      ]
+    },
+    "web promotions-portail (1364)": {
+      "commission": null,
+      "codes": [
+        "VIP-RO-NANR",
+        "VIP-RATE-FLEX"
+      ]
+    }
+  },
+  "displayOrder": {
+    "rooms": [
+      "Double Classique",
+      "Double Single Use Classique",
+      "Twin Classique",
+      "Double Classique Terrasse",
+      "Double Deluxe",
+      "Twin Deluxe",
+      "Double Deluxe Terrasse",
+      "Deux Chambres Adjacentes 4 personnes"
+       ],
+    "plans": [
+      "TO BB FLEX NET 2P (TO-BB-FLEX-NET-2P)",
+      "TO BB NANR NET 2P (TO-BB-NANR-NET-2P)",
+      "TO BB FLEX BRUT 2P (TO-BB-FLEX-BRUT-2P)",
+      "TO BB NANR BRUT 2P (TO-BB-NANR-BRUT-2P)",
+      "HOTUSA BB FLEX 2P (HOTUSA-BB-FLEX-2P)",
+      "HOTUSA BB NANR 2P (HOTUSA-BB-NANR-2P)",
+      "HOTUSA RO FLEX (HOTUSA-RO-FLEX)",
+      "HOTUSA RO NANR (HOTUSA-RO-NANR)",
+      "FB CORPO RO FLEX (FB-CORPO-RO-FLEX)",
+      "FB CORPO BB FLEX 1P (FB-CORPO-BB-FLEX-1P)",
+      "FB CORPO BB FLEX 2P (FB-CORPO-BB-FLEX-2P)", 
+      "FB CORPO BB FLEX 4P (FB-CORPO-BB-FLEX-4P)",
+      "MOBILE RO NANR (MOBILE-RO-NANR)",
+      "MOBILE RO FLEX (MOBILE-RO-FLEX)",
+      "MOBILE BB FLEX 1P (MOBILE-BB-FLEX-1-P)",
+      "MOBILE BB NANR 1P (MOBILE-BB-NANR-1P)",
+      "MOBILE BB FLEX 2P (MOBILE-BB-FLEX-2P)",
+      "MOBILE BB NANR 2P (MOBILE-BB-NANR-2P)",
+      "MOBILE BB FLEX 4P (MOBILE-BB-FLEX-4P)",
+      "MOBILE BB NANR 4P (MOBILE-BB-NANR-4P)",
+      "CWT-BB-FLEX (CWT-BB-FLEX)",
+      "VIP BB FLEX 1P (VIP-BB-FLEX-1P)",
+      "VIP-BB-NANR 1P (VIP-BB-NANR-1P)",
+      "VIP BB FLEX 4P (VIP-BB-FLEX-4P)",
+      "VIP BB NANR 4P (VIP-BB-NANR-4P)",
+      "TO BB FLEX BRUT 1P (TO-BB-FLEX-BRUT-1P)",
+      "TO BB NANR BRUT 1P (TO-BB-NANR-BRUT-1P)",
+      "TO BB FLEX BRUT 4P (TO-BB-FLEX-BRUT-4P)",
+      "TO BB NANR BRUT 4P (TO-BB-NANR-BRUT-4P)",
+      "TO BB FLEX NET 1P (TO-BB-FLEX-NET-1P)",
+      "TO BB NANR NET 1P (TO-BB-NANR-NET-1P)", 
+      "TO BB FLEX NET 4P (TO-BB-FLEX-NET-4P)",
+      "TO BB NANR NET 4P (TO-BB-NANR-NET-4P)",
+      "HOTUSA BB FLEX 1P (HOTUSA-BB-FLEX-1P)",
+      "HOTUSA BB NANR 1P (HOTUSA-BB-NANR-1P)",
+      "HOTUSA BB FLEX 4P (HOTUSA-BB-FLEX-4P)",
+      "HOTUSA BB NANR 4P (HOTUSA-BB-NANR-4P)",
+      "VIP RO NANR (VIP-RO-NANR)",
+      "OTA BB FLEX 1P (OTA-BB-FLEX-1P)",
+      "OTA BB NANR 1P (OTA-BB-NANR-1P)",
+      "OTA BB FLEX 2P (OTA-BB-FLEX-2P)",
+      "OTA BB FLEX 4P (OTA-BB-FLEX-4P)",
+      "OTA BB NANR 4P (OTA-BB-NANR-4P)",
+      "TO RO FLEX NET (TO-RO-FLEX-NET)",
+      "TO RO NANR NET (TO-RO-NANR-NET)",
+      "HB RO FLEX BRUT (HB-RO-FLEX-BRUT)",
+      "TO RO NANR BRUT (TO-RO-NANR-BRUT)",
+      "OTA BB NANR 2P (OTA-BB-NANR-2P)",
+      "VIP BB FLEX 2P (VIP-BB-FLEX-2P)",
+      "VIP BB NANR 2P (VIP-BB-NANR-2P)",
+      "VIP RO FLEX (VIP-RATE-FLEX)",
+      "PKG EXP RO FLEX (PKG-EXP-RO-FLEX)",
+      "PKG EXP RO NANR (PKG-EXP-RO-NANR)",
+      "PKG EXP BB FLEX 1P (PKG-EXP-BB-FLEX-1P)",
+      "PKG EXP BB NANR 1P (PKG-EXP-BB-NANR-1P)",
+      "PKG EXP BB FLEX 2P (PKG-EXP-BB-FLEX-2P)",
+      "PKG EXP BB NANR 2P (PKG-EXP-BB-NANR-2P)",
+      "PKG EXP BB FLEX 4P (PKG-EXP-BB-FLEX-4P)", 
+      "PKG EXP BB NANR 4P (PKG-EXP-BB-NANR-4P)",
+      "PROMO TO RO FLEX (PROMO-TO-RO-FLEX)",
+      "PROMO TO RO NANR (PROMO-TO-RO-NANR)",
+      "PROMO TO BB 2P FLEX (PROMO-TO-BB-2P-FLEX)",
+      "PROMO TO BB 2P NANR (PROMO-TO-BB-2P-NANR)",
+      "PROMO TO BB 1P FLEX (PROMO-TO-BB-1-FLEX)",
+      "PROMO TO BB 1P NANR (PROMO-TO-BB-1P-NANR)",
+      "PROMO TO BB 4P FLEX (PROMO-TO-BB-4P-FLEX)",
+      "PROMO TO BB 4P NANR (PROMO-TO-BB-4P-NANR)",
+      "PROMO HB RO FLEX (PROMO-HB-RO-FLEX)",
+      "PROMO HB RO NANR (PROMO-HB-RO-NANR)",
+      "PROMO HB BB FLEX 1P (PROMO-HB-BB-FLEX-1P)",
+      "PROMO HB BB NANR 1P (PROMO-HB-BB-NANR-1P)",
+      "PROMO HB BB FLEX 2P (PROMO-HB-BB-FLEX-2P)",
+      "PROMO HB BB NANR 2P (PROMO-HB-BB-NANR-2P)",
+      "PROMO HB BB FLEX 4P (PROMO-HB-BB-FLEX-4P)",
+      "PROMO HB BB NANR 4P (PROMO-HB-BB-NANR-4P)",
+      "TRAVCO BB FLEX NET (TRAVCO-BB-FLEX-NET)",
+      "TRAVCO BB NANR NET (TRAVCO-BB-NANR-NET)",
+      "OTA RO FLEX (OTA-RO-FLEX)",
+      "OTA RO NANR (OTA-RO-NANR)",
+      "AMEX GBT (AMEX-GBT)",
+      "OTA RO FLEX 20 (OTA-RO-FLEX-20)"
+    ]
+  }
+}
